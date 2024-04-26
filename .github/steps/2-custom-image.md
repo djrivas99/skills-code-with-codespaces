@@ -1,10 +1,13 @@
 <!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
+   <<< Author notes: Step 2 >>>
+   Start this step by acknowledging the previous step.
+   Define terms and link to docs.github.com.
 -->
+# Step 2: Add a custom image to your codespace
 
-## Step 2: Add a custom image to your codespace!
+To add a custom image to your codespace, you can specify the URL of the image in the `devcontainer.json` file. Here's an example:
+
+[Link to custom image](https://th.bing.com/th/id/OIP.koEvj0q1HeFTpeVQ2-OD-AAAAA?rs=1&pid=ImgDetMain)
 
 _Nice work! :tada: You created your first codespace and pushed code using VS Code!_
 
@@ -16,39 +19,9 @@ A dev container file is a JSON file that lets you customize the default image th
 
 Let's add a `devcontainer.json` file and add a custom image.
 
-### :keyboard: Activity: Add a .devcontainer.json file to customize your codespace
+## :keyboard: Activity: Add a .devcontainer.json file to customize your codespace
 
 1. Navigating back to your **Code** tab of your repository, click the **Add file** drop-down button, and then click `Create new file`.
-1. Type or paste the following in the empty text field prompt to name your file.
+      .devcontainer/devcontainer.json
 
-   ```
-   .devcontainer/devcontainer.json
-   ```
-
-1. In the body of the new **.devcontainer/devcontainer.json** file, add the following content:
-
-   ```jsonc
-   {
-     // Name this configuration
-     "name": "Codespace for Skills!",
-     // Use the base codespace image
-     "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
-
-     "remoteUser": "codespace",
-     "overrideCommand": false
-   }
-   ```
-
-1. Click **Commit changes** and then select **Commit changes directly to the `main` branch**.
-1. Create a new codespace by navigating back to the **Code** tab of your repository.
-1. Click the green **Code** button located in the middle of the page.
-1. Click the **Codespaces** tab on the box that pops up.
-1. Click the **Create codespace on main** button OR click the `+` sign on the tab. This will create a new codespace on the main branch. (Notice your other codespace listed here.)
-
-   > Wait about **2 minutes** for the codespace to spin itself up.
-
-1. Verify that your new codespace is is running, as you did previously.
-
-   Note the image being used is the default image provided for GitHub Codespaces. It includes runtimes and tools for Python, Node.js, Docker, and more. See the full list here: https://aka.ms/ghcs-default-image. Your development team can use any custom image that has the necessary prerequisites installed. For more information, see [codespace image](https://aka.ms/configure-codespace).
-
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+# modified:   .github/steps/2-custom-image.md
